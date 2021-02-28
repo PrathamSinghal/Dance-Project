@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Reggae+One&display=swap');
+*{
+    margin: 0;  /* reset hai ( * ) isko lagane se css reset ho jayegi */
+    box-sizing: border-box;
+    padding: 0;  /* aisa karne se ye hota hai ki faltu ke gaps aapko pareshan nahi karte hai  */
+
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 22px;
+    margin-right: 40px;
+
+}
+
+#logo img{
+    height: 42px;
+    filter: invert(1);
+}
+
+#navbar{
+    background-color: #c42c2c;
+    padding: 18px 14px;  /* agar margin dunga toh bahar se space ayegi or padding dunga toh andar se space ayegi  */
+    font-family: 'Reggae One', cursive;
+    
+}
+
+#navbar ul{
+    display: flex;  /* seedha karne ke liye mai flexbox ka use karunga to mai is ul ko flexbox banaunga */
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;  /* underline chali jayegi */
+    padding: 13px 20px;
+}
+
+#navbar li a:hover{
+    color: black;
+    
+}
+
+#introSection{
+    padding-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: center/cover no-repeat url("/static/bg.jpg");
+    height: 460px;
+    background-color: red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 54px;
+}
+
+#introSection div.small{ 
+     font-size: 46px;
+     padding: 5px;
+}
+
+#sponsorsSection{
+    height: 400px;
+    background-color: #e4d6d6ee;
+}
+
+#sponsorsSection h2{
+    text-align: center;
+    /* margin-top: 20px;     yha pe padding dalni chaaiye tha kyuki padding daalunga toh color retain rahega so, use padding kyuki vo andar se space dega */
+    padding-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    
+}
+
+#sponsors{
+    height: 196px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+
+#missionSection{
+    height: 325px;
+    background-color: #ffffffee;
+    margin: auto;
+    width: 67%;
+    display: block;
+}
+
+#missionSection h2{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    
+    
+}
+
+#missionSection div.card{ 
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    height: 200px;
+    margin: 24px 22px;
+    display: inline-block;
+    background: #f6f4f4;
+}
+
+.card h3{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 111px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+.card-content{
+    padding: 0 10px;
+}
+.card-content p{
+    font-size: 16px;
+}
+
+#footer{
+    display: flex;
+    color: white;
+    height: 60px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Reggae One', cursive;
+    
+}
