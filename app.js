@@ -44,18 +44,14 @@ app.get('/contact',(req,res) => {
     res.status(200).render('contact.pug',params);
 });
  
-// agar express ki maddad se post karna chahate hai .....post request maarkar database mei sav karna chahate hai to hame ek module install karna padega ....bodyParser 
 app.post('/contact',(req,res) => {
-    // yha mai kahunga ki jaise hi contact pe koi post request marega...tab ye hona chaaiye.
-    let myData = new Contact(req.body); // ek naya contact object banaunga...kisse...req.body se jo request aa rahi hai usme se content abstract karke ek object bna lo.
-    // ab mai save karunga
+    let myData = new Contact(req.body);
     myData.save().then(()=>{
         res.send("This item has been saved to the database.");
     }).catch(()=>{
         res.status(400).send("Item was not been saved to the database.")
-    })         // ye save karne ke saath-saath ek promise return karega....or vo promise return karega to mujhe likhna padega .then()  usko handle karne ke liye kyuki node mei saari cheezein asynchronous hoti hai
+    })     
     
-    // res.status(200).render('contact.pug'); // ye error isliye aa rha tha kyuki maine isko ek baar send kar diya tha but mai vaapas se isko send karne ki koshish kar rha tha.
 });
 
 // START THE SERVER
