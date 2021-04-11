@@ -1,5 +1,5 @@
-# Dance-Project
+# Getting Started Dance_Project_NodeJS_MongoDB
+This project was bootstrapped with Pug, CSS, JS NodeJS, ExpressJS and mongoDB.
 
-Open the project in VS Code and install all dependencies.
-Start the project with node app.js.
-Open localhost:8000 in the browser window.
+# Available Scripts
+In the project directory, you can run: Open https://dance-web-hosting.herokuapp.com/ to view it in the browser.
