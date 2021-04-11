@@ -44,8 +44,6 @@ app.get('/contact',(req,res) => {
     res.status(200).render('contact.pug',params);
 });
  
-// schema mei banane ke baad or model mei compile karne ke baad mai ek post request karne ke liye method likhunga
-// isme mai kahunga ki agar post request aati hai tab saare ke saare post parameters lena hai or ek database mei save karna hai.
 // agar express ki maddad se post karna chahate hai .....post request maarkar database mei sav karna chahate hai to hame ek module install karna padega ....bodyParser 
 app.post('/contact',(req,res) => {
     // yha mai kahunga ki jaise hi contact pe koi post request marega...tab ye hona chaaiye.
