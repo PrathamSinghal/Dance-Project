@@ -1,11 +1,14 @@
 const express = require('express');
-const path = require('path');
 const mongoose = require('mongoose');
+const path = require('path');
 const bodyparser = require("body-parser"); // till now we haven't used it.
-mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
+const dotenv = require('dotenv');
+dotenv.config({ path: "./config.env" })
+
+require('./db/conn');
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT;
 
 // DEFINE MONGOOSE SCHEMA
 const contactSchema = new mongoose.Schema({
